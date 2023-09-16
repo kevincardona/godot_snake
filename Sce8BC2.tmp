@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmb2tljkdbq70"]
+
+[ext_resource type="Texture2D" uid="uid://cr7d3o088o703" path="res://Sprites/green.png" id="1_6ifik"]
+[ext_resource type="Script" path="res://Game.gd" id="1_bpaqn"]
+[ext_resource type="Texture2D" uid="uid://b0xeip2wmlhko" path="res://Sprites/white.png" id="3_7a4ib"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_bpaqn")
+
+[node name="Green" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(561, 290)
+texture = ExtResource("1_6ifik")
+metadata/_edit_lock_ = true
+
+[node name="SnakeSegment" type="Sprite2D" parent="."]
+position = Vector2(464, 443)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_7a4ib")
+
+[node name="Timer" type="Timer" parent="."]

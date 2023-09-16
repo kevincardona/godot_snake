@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmb2tljkdbq70"]
+
+[ext_resource type="Script" path="res://Game.gd" id="1_bpaqn"]
+[ext_resource type="Texture2D" uid="uid://b0xeip2wmlhko" path="res://Sprites/white.png" id="3_7a4ib"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_bpaqn")
+
+[node name="SnakeSegment" type="Sprite2D" parent="."]
+position = Vector2(-432, 443)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_7a4ib")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
+[node name="Score" type="RichTextLabel" parent="."]
+offset_left = 592.0
+offset_top = 16.0
+offset_right = 792.0
+offset_bottom = 166.0
+scale = Vector2(0.5, 0.5)
+theme_override_font_sizes/normal_font_size = 100
+bbcode_enabled = true
+text = "[center]0"
