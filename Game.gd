@@ -71,6 +71,8 @@ func reset_game():
 	if food:
 		food.queue_free()
 		spawn_food()
+	score = 0
+	$Score.text = "[center]0"
 
 func _physics_process(delta):
 	if Input.is_action_pressed("ui_up") and snake_direction != Direction.DOWN:
